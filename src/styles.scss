@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('./assets/Fonts/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf');
+}
+
+@font-face {
+    font-family: 'KumbhSans';
+    src: url('./assets/Fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.ttf');
+}
