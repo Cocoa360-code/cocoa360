@@ -11,3 +11,8 @@
     font-family: 'KumbhSans';
     src: url('./assets/Fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.ttf');
 }
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
