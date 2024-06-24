@@ -10,6 +10,9 @@ module.exports = {
         ClashDisplay: ["ClashDisplay"],
         KumbhSans: ["KumbhSans"],
       },
+      screens: {
+        'lgp': { 'raw': '(min-width: 1400px)' },
+      }
     },
   },
   plugins: [],
