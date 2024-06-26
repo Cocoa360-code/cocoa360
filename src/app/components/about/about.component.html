@@ -1,0 +1,106 @@
+<section class="w-full max-w-[1728px] m-auto">
+    
+    <!--******************* Hero *********************-->
+    <div class="flex flex-col justify-start items-center pt-[123px] px-[10px] lgp:px-[0]">
+
+        <p class="uppercase font-ClashDisplay font-light text-6xl text-[#023C22] mb-[66px]">About <span class="font-bold">US</span></p>
+        <img src="../assets/Images/Communities do.jpg" alt="" class=" w-full h-[610px] object-cover object-top">
+        <div class="flex flex-col lg:flex-row gap-[100px] max-w-[1400px] mt-[138px]">
+            <p class="font-KumbhSans font-semibold text-5xl text-[#217851] text-nowrap">Our Story</p>
+            <p class="font-KumbhSans font-medium text-2xl text-[#121212]">Founded in 2015 by CEO Dr. Shadrack Frimpong, we employ community-centered development to help communities in Ghana thrive. Dr. Frimpong, the son of a cocoa farmer and a charcoal seller, he grew up without running water and electricity in rural Ghana. He became the first person from his village to attend college in the US, graduating from the University of Pennsylvania with the $150,000 President’s Engagement Prize (PEP), one of Penn’s highest honors. With the PEP, he pioneered the trailblazing community engagement model, farm-for-impact.</p>
+        </div>
+        <p class="font-KumbhSans font-semibold text-5xl text-[#121212] max-w-[950px] text-center mt-[138px]">Supporting <span class="text-[#1F7154]">self-sustaining communities</span> for a <span class="text-[#1F7154]">vibrant Ghana.</span></p>
+
+    </div>
+
+    <!--******************* section 1 *********************-->
+    <div class="bg-[#E8EFEB] mt-[129px] py-[128px]">
+        <img src="../assets/Vectors/image4.png" alt="">         
+    </div>
+
+    <!--******************* section 2 *********************-->
+    <div class="mb-1 px-[10px] py-[50px] md:p-[50px] lg:p-[177px]">
+
+        <p class="text-center pb-[23px] font-KumbhSans font-semibold text-5xl text-[#217851] border-b border-black">Our team</p>
+        
+        <div class="px-0 md:p-[20px] lg:p-[60px] text-black font-KumbhSans">
+            <p class="font-normal text-2xl">Our team of experts have helped communities thrive in West Ghana. </p>
+            <div class="flex flex-col lgp:flex-row justify-center items-start gap-[60px]  mt-[24px]">
+
+                <div class="text-nowrap w-fit font-KumbhSans font-medium text-2xl text-black flex flex-row flex-wrap lgp:flex-col gap-[40px] lg:gap-[90px] items-start justify-start">
+                    <button class="focus:border-b border-black" (click)="onClick(true)" [ngClass]="{'border-b': selected}">Executive Team</button>
+                    <button class="focus:border-b border-black" (click)="onClick(false)">Programs</button>
+                </div>
+
+                <div class="flex flex-row flex-wrap gap-[40px] justify-center items-center lg:justify-start lg:items-start" *ngIf="selected">
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Shadrack Osei Frimpong CEO 1.png" alt="" class="mb-[8px] object-cover object-center h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Jane Cooper</p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Founder & Chairman</p>
+                    </div>
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Moro Seidu.jpg" alt="" class="mb-[8px] object-cover object-top h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Moro Seidu</p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Chief Programs Officer</p>
+                    </div>
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Prosper Dzitse 1.png" alt="" class="mb-[8px] object-cover object-center h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Prosper Dzitse </p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Chief Human Resource Officer</p>
+                    </div>
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Jerry Bosrotsi.jpg" alt="" class="mb-[8px] object-cover object-top h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Jerry Bosrotsi</p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Chief Finance Officer</p>
+                    </div>
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Andrews Adjei.jpg" alt="" class="mb-[8px] object-cover object-top h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Andrew Adjel</p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Chief Engagement & Communications Officer</p>
+                    </div>
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Janet Anafo.jpg" alt="" class="mb-[8px] object-cover object-top h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Janet Anafo</p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Programs Head, Tarwka Breman</p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-row flex-wrap gap-[40px] justify-center items-center lg:justify-start lg:items-start" *ngIf="!selected">
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Prosper Dzitse 1.png" alt="" class="mb-[8px] object-cover object-center h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Prosper Dzitse </p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Chief Human Resource Officer</p>
+                    </div>
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Gershon Newlove Nkegbe.jpg" alt="" class="mb-[8px] object-cover object-top h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Gershon Newlove Nkegbe</p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Head Clinician, Tarkwa Breman Girl’s School</p>
+                    </div>
+
+                    <div class="w-[310px] bg-[#F8F8F8]">
+                        <img src="../assets/Images/Moro Seidu.jpg" alt="" class="mb-[8px] object-cover object-top h-[317px] w-[310px]">
+                        <p class="font-normal text-2xl px-[12px]">Isaac Donkor</p>
+                        <p class="font-normal text-xl text-[#B2B2B2] px-[12px] pb-[12px]">Agriculture Officer, Tarkwa Breman Community Farm</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--******************* section 3 newsletter *********************-->
+    <div class="bg-[#E8EFEB] py-[100px] pb-[250px]">
+        <app-newsletter></app-newsletter>
+    </div>
+</section>

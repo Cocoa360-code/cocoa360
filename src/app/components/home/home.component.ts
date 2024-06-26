@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  isSubscribed: boolean = false;
-  email: string = '';
 
-  onSubmit(): void {
-    console.log('Implement Newsletter subscrition!')
-    this.isSubscribed = true;
-  }
 }

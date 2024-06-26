@@ -1,0 +1,30 @@
+<div class="flex flex-col bg-transparent justify-center items-center py-[100px]  text-center font-KumbhSans gap-[20px]">
+
+    <div *ngIf="!isSubscribed">
+
+        <p class="font-semibold text-xl uppercase mb-[10px]">Join THE COCOA360 COMMUNITY</p>
+        <p class="font-bold text-5xl uppercase text-[#217851] mb-[15px]">newsletter</p>
+        <p class="font-light text-xl uppercase mb-[20px]">Get updates on the latest <br>Cocoa360 work.</p>
+
+        <form (ngSubmit)="onSubmit()" ngNativeValidate>
+            <div class="flex flex-row justify-center items-center w-full px-[10px] lg:w-[870px]">
+                <input
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    [(ngModel)]="email" 
+                    placeholder="Email Address" 
+                    class="pl-5 border border-[#3A3F44] h-[50px] w-full rounded-l-[7.5px]" 
+                    required>
+                <button type="submit" class="text-white uppercase bg-[#EB7450] hover:bg-[#fb8764]  font-bold text-base h-[50px] w-[215px] rounded-r-[7.5px] text-center leading-[50px]">Subscribe</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div *ngIf="isSubscribed">
+        <p class="font-bold text-5xl uppercase text-[#217851]">thank you</p>
+        <p class="font-semibold text-xl uppercase mt-4">you have been added to our list</p>
+    </div>
+
+</div>

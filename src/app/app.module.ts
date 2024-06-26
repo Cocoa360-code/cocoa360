@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ImpactComponent } from './components/impact/impact.component';
+import { AboutComponent } from './components/about/about.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ImpactComponent } from './components/impact/impact.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ImpactComponent
+    ImpactComponent,
+    AboutComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
