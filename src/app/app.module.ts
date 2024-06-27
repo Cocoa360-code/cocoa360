@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { ImpactComponent } from './components/impact/impact.component';
 import { AboutComponent } from './components/about/about.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { HowWeWorkComponent } from './components/how-we-work/how-we-work.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
     FooterComponent,
     ImpactComponent,
     AboutComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    HowWeWorkComponent
   ],
   imports: [
     BrowserModule,
