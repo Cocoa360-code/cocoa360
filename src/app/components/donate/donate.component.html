@@ -1,0 +1,41 @@
+<section class="w-full max-w-[1728px] m-auto lgp:pb-[600px] pb-[1000px]">
+
+    <!--******************* Hero *********************-->
+    <div class="flex flex-col lg:flex-row overflow-visible px-3 lg:px-0">
+
+        <div class="md:min-w-[500px] w-full md:max-w-[500px] flex flex-col mt-[200px] mx-auto lg:ml-[200px] z-10 pb-4 relative">
+            <p class="font-KumbhSans font-medium text-black text-3xl md:text-4xl mb-[5px]">Your donations make</p>
+            <p class="font-ClashDisplay font-light text-[#023C22] text-5xl md:text-6xl uppercase mb-[20px]">big <span class="font-bold">impact</span></p>
+            <p class="font-KumbhSans font-light text-black text-2xl md:text-3xl">Make a single donation towards our mission of championing a self-sustaining model of rural development.</p>
+        
+            <div class="lg:p-[54px] p-[10px]  text-center rounded-[27px] mt-[100px] absolute top-[250px] min-w-fit bg-white" style="box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);">
+                
+                <div class="grid grid-rows-2 grid-cols-3 gap-3 font-KumbhSans min-w-max">
+                    <button (click)="updateAmount(50)" class="bg-[#F4F4F5] hover:bg-[#d4d4d4] px-1 lg:w-[194px] h-[71px] font-semibold text-3xl rounded-[10px]">$50</button>
+                    <button (click)="updateAmount(100)" class="bg-[#F4F4F5] hover:bg-[#d4d4d4] px-1 lg:w-[194px] h-[71px] font-semibold text-3xl rounded-[10px]">$100</button>
+                    <button (click)="updateAmount(200)" class="bg-[#F4F4F5] hover:bg-[#d4d4d4] px-1 lg:w-[194px] h-[71px] font-semibold text-3xl rounded-[10px]">$200</button>
+                    <button (click)="updateAmount(250)" class="bg-[#F4F4F5] hover:bg-[#d4d4d4] px-1 lg:w-[194px] h-[71px] font-semibold text-3xl rounded-[10px]">$250</button>
+                    <button (click)="updateAmount(500)" class="bg-[#F4F4F5] hover:bg-[#d4d4d4] px-1 lg:w-[194px] h-[71px] font-semibold text-3xl rounded-[10px]">$500</button>
+                    <button (click)="updateAmount(1000)" class="bg-[#F4F4F5] hover:bg-[#d4d4d4] px-1 lg:w-[194px] h-[71px] font-semibold text-3xl rounded-[10px]">$1000</button>
+                </div>
+
+                <div class="w-full h-[81px] mt-[41px] flex flex-row bg-[#F4F4F5] rounded-[10px]">
+                    <input type="number" class="bg-transparent w-full h-[81px] font-semibold text-2xl text-[#A1A1A1] pl-[42px]" placeholder="$ Other" value="{{amount}}">
+                    <p class="uppercase font-semibold text-xl text-[#A1A1A1] block h-full text-center bg-transparent leading-[81px] pr-[30px] pl-[10px]">usd</p>
+                </div>
+
+                <a (click)="donate()" class="cursor-pointer mt-[64px] flex items-center justify-center bg-[#EB7450] hover:bg-[#f17f5d] text-white h-[82px] w-full font-ClashDisplay font-bold text-2xl">Continue</a>
+                
+                <p class="font-KumbhSans font-light text-base text-[#737373] text-left mt-[31px]">Organized by Cocoa360 <br>501(c)(3) Public Charity • EIN 47-4120941 <br>info@cocoa360.org</p>
+
+            </div>
+        </div>
+
+        <img src="../assets/Vectors/map vector.png" alt="world map vector" class="h-[800px] opacity-85 md:opacity-100 object-cover z-0 absolute left-0 top-[300px] lgp:top-0 lgp:relative">
+        <img src="../assets/Images/image0.png" alt="world map vector" class="h-[155px] opacity-85 md:opacity-100 w-[155px] lg:h-[255px] lg:w-[255px] z-0 absolute right-[50%] top-[200px] md:top-[150px]">
+        <img src="../assets/Images/image1.png" alt="world map vector" class="h-[79px] opacity-85 md:opacity-100 w-[79px] lg:h-[179px] lg:w-[179px] z-0 absolute right-[40%] top-[500px]">
+        <img src="../assets/Images/image2.png" alt="world map vector" class="h-[190px] opacity-85 md:opacity-100 w-[190px] lg:h-[290px] lg:w-[290px] z-0 absolute right-[20%] top-[300px]">
+
+    </div>
+
+</section>
