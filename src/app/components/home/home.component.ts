@@ -23,6 +23,6 @@ export class HomeComponent {
   communitiesCountInterval:any = setInterval(()=>{
     this.communitiesCount++;
     if(this.communitiesCount == 8) clearInterval(this.communitiesCountInterval);
-  }, 700);
+  }, 900);
 
 }
