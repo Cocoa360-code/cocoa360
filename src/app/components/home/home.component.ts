@@ -18,11 +18,11 @@ export class HomeComponent {
   girlsCountInterval:any = setInterval(()=>{
     this.girlsCount++;
     if(this.girlsCount == 300) clearInterval(this.girlsCountInterval);
-  }, 40);
+  }, 50);
 
   communitiesCountInterval:any = setInterval(()=>{
     this.communitiesCount++;
     if(this.communitiesCount == 8) clearInterval(this.communitiesCountInterval);
-  }, 900);
+  }, 1000);
 
 }
