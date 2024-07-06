@@ -13,7 +13,7 @@ export class DonateComponent {
   }
 
   donate():void {
-    console.log(`implement donation! selected : ${this.amount} `)
+    window.open('https://givebutter.com/generaldonations', '_blank')?.focus();
   }
 
 }
